@@ -1,0 +1,27 @@
+<h1> Co-op Review</h1>
+
+<h2>Microsoft</h2>
+
+<h4>Review</h4>
+<p> I Love microsoft!</p>
+<form>
+
+	<br>Name:<input id="name">
+	<br>Review:<input id="review2">
+	<br>Rating:<input id="rating2">
+
+
+</form>
+<pre id = "review"></pre>
+<input type="button" id="btnSubmit" value="Submit" onclick="review3();" /> 
+<script>
+	var review1 = document.getElementById("review2");
+	var name1 = document.getElementById("name");
+	var rating = document.getElementById("rating2");
+	function review3() 
+	{
+		review.innerHTML = name1.value + ": \n\n" + review1.value + "\n\nRating: "+ rating.value; 
+	}
+</script>
+
+

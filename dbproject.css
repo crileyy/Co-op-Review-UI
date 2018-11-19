@@ -1,0 +1,28 @@
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial;
+	font-size: 100%;
+	padding: 15px 9px;
+
+}
+
+table tr {
+	border-collapse: collapse;
+	-moz-box-shadow: 5px 5px 5px rgba(58,96,112,.1);
+	-webkit-box-shadow: 5px 5px 5px rgba(58,96,112,.1);
+	box-shadow: 5px 5px 5px rgba(58,96,112,.1);
+	background-color: white;
+	
+}
+
+table th {
+	background-color: white;
+	color: red;
+	padding: 4px 32px 4px 8px;
+	text-align: left;
+
+}
+
+table td {
+	border: 1px solid purple;
+	padding: 4px 8px;
+}
