@@ -1,3 +1,9 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="css/bootstrap.css">
+
+<body class="page">
+
 <h1> Co-op Review</h1>
 
 <h2>Microsoft</h2>
@@ -5,15 +11,32 @@
 <h4>Review</h4>
 <p> I Love microsoft!</p>
 <form>
-
-	<br>Name:<input id="name">
-	<br>Review:<input id="review2">
-	<br>Rating:<input id="rating2">
-
-
+	<div class="form-group ">
+		<label>Name:</label>
+		<input class="form-control col-4" id="review1">
+	</div>
+	<div class="form-group">
+		<label>Review:</label>
+		<input class="form-control col-7 " id="review2">
+	</div>
+	<div class="form-group">
+		<label>Rating:</label>
+		<select class="form-control col-2">
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+			<option>6</option>
+			<option>7</option>
+			<option>8</option>
+			<option>9</option>
+			<option>10</option>
+		</select>
+	</div>
 </form>
 <pre id = "review"></pre>
-<input type="button" id="btnSubmit" value="Submit" onclick="review3();" /> 
+<button type="button"  value="Submit" onclick="review3();" class="btn btn-secondary" > SUBMIT </button>
 <script>
 	var review1 = document.getElementById("review2");
 	var name1 = document.getElementById("name");
@@ -23,5 +46,9 @@
 		review.innerHTML = name1.value + ": \n\n" + review1.value + "\n\nRating: "+ rating.value; 
 	}
 </script>
+
+</body>
+</html>
+
 
 
