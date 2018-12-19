@@ -1,6 +1,39 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import ReviewList from './components/Review/ReviewList/ReviewList.js';
+
+const review = {
+  company: 'Random Company',
+  reviewText: 'review text',
+  rating: 5,
+  position: 'Software Engineer Co-op',
+  companyLocation: {
+    city: 'San Francisco',
+    state: 'California',
+    country: 'United States'
+  },
+  numInterviews: 3,
+  returnOffer: true,
+  wouldWorkAgain: true,
+  user: {
+    username: 'criley',
+    firstname: 'Colin',
+    lastname: 'Riley',
+    year: 3,
+    email: 'test@husky.neu.edu',
+    numCoops: 3
+  }
+}
+
+const reviews = [
+  review,
+  review,
+  review,
+  review,
+  review,
+  review,
+]
 
 /*
 in App div: Interface to search companies
@@ -12,6 +45,8 @@ need interface for reading reviews, creating an account, writing review
 
 flow:
 search a company in search bar -> click on company -> see company info and all reviews
+or
+search a company in search bar -> see all reviews for that company on same page
 
 create an account button -> enter info -> hit enter
 
@@ -23,20 +58,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <header className="Header">Best Co-op</header>
+        <h1>Northeastern Co-op Reviews</h1>
+        <h2>Find the job that fits your co-op cycle</h2>
+        <ReviewList reviews={reviews}/>
       </div>
     );
   }

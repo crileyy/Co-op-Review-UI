@@ -2,6 +2,19 @@
   text-align: center;
 }
 
+.App {
+  font-family: 'Work Sans', sans-serif;
+}
+
+.Header {
+  padding: .66rem 0;
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-align: left;
+  color: #ae4543;
+  font: Roboto, 'Segoe UI', Tahoma, sans-serif;
+}
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
@@ -29,4 +42,16 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+h1 {
+  padding: .66rem 0;
+  text-align: center;
+  background-color: #ae4543;
+  font-family: Poppins, sans-serif;
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 400;
+  font: Roboto, 'Segoe UI', Tahoma, sans-serif;
+  pointer-events: initial;
 }
