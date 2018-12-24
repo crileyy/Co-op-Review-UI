@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import ReviewList from './components/Review/ReviewList/ReviewList.js';
+import SearchBar from './components/SearchBar/SearchBar.js';
 
 const review = {
   company: 'Random Company',
@@ -53,6 +54,8 @@ create an account button -> enter info -> hit enter
 write a review button -> enter info -> hit enter
 
 Mock reviews and companies for now
+
+TODO: Reformat the info inside a single review, add search bar
 */
 class App extends Component {
   render() {
@@ -61,6 +64,7 @@ class App extends Component {
         <header className="Header">Best Co-op</header>
         <h1>Northeastern Co-op Reviews</h1>
         <h2>Find the job that fits your co-op cycle</h2>
+        <SearchBar />
         <ReviewList reviews={reviews}/>
       </div>
     );

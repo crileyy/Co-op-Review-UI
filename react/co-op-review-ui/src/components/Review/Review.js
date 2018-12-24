@@ -31,6 +31,8 @@ class Review extends React.Component {
 			<div className="Review">
 				<div className="Review-header">
 					<span className="Company-name">{this.props.review.company}</span>
+					<span className="Position">{this.props.review.position}</span>
+					<span className="Rating">Rating: {this.props.review.rating}</span>
 				</div>
 				<div className="Company-information">
 					<div className="Company-location">

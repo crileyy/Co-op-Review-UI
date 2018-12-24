@@ -12,6 +12,24 @@
 .Company-name {
     display: inline-block;
     max-width: calc(100% - 20px);
+    float: left;
+}
+
+.Company-location {
+	text-align: right;
+    display: inline-block;
+    float: right;
+    white-space: normal;
+    max-width: 300px;
+    min-width: 53px;
+    padding: 20px;
+}
+
+.Review-information {
+	text-align: left;
+    display: inline-block;
+    width: calc(100% - 300px);
+    padding: 20px;
 }
 
 .Review {
@@ -36,4 +54,16 @@
 
 .Review:last-child {
     margin-bottom: 0;
+}
+
+.Rating {
+    vertical-align: top;
+    display: inline-block;
+    float: right;
+}
+
+.Position {
+    vertical-align: top;
+    display: inline-block;
+    float: center;
 }
