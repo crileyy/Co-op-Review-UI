@@ -7,7 +7,7 @@ class SearchBar extends React.Component {
         this.state = {
             term: '',
             location: '',
-            sortBy: 'best_match'
+            sortBy: 'company'
         };
 
         this.handleTermChange = this.handleTermChange.bind(this);
@@ -16,9 +16,9 @@ class SearchBar extends React.Component {
     }
 
     sortByOptions = {
-        'Company': 'best_match',
-        'Position': 'rating',
-        'User': 'review_count'  
+        'Company': 'company',
+        'Position': 'position',
+        'User': 'user'  
     };
 
     getSortByClass(sortByOption) {
