@@ -28,7 +28,8 @@ class Review extends React.Component {
 
 	render() {
 		return (
-			<div className="Review">
+			<li>
+				<div className="Review">
 				<div className="Review-header">
 					<span className="Company-name">{this.props.review.company}</span>
 					<span className="Position">{this.props.review.position}</span>
@@ -53,6 +54,7 @@ class Review extends React.Component {
 						<p>{this.props.review.user.username}</p>
 				</div>
 			</div>
+			</li>
 		);
 	}
 }
